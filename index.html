@@ -34,21 +34,23 @@
                 <div class="identification_head_info">
                     <form>
                         <legend>Информация по оплате:</legend>
-                        <div>
-                            <label for="uname">Номер счета:</label>
-                            <output type="text" id="uname" name="uname">87123658716587</output>
+                        <div class="data-label">
+                            <label for="bank-account">Номер счета:</label>
+                            <br>
+                            <label for="summ">Сумма платежа:</label>
                         </div>
-                        <div>
-                            <label for="uname">Сумма платежа:</label>
-                            <output type="text" id="uname" name="uname">100 руб.</output>
+                        <div class="data-output">
+                            <output type="text" id="bank-account" name="bank-account">87123658716587</output>
+                            <br>
+                            <output type="text" id="summ" name="summ">100 руб.</output>
                         </div>
                     </form>
                 </div>
                 <div class="identification_head_bank">
                     <form>
+                        <legend>Данные банковской карты</legend>
                         <div class="bank-card-face">
-                            <legend>Данные банковской карты</legend>
-                            <div>
+                            <div class="bank-card_number">
                                 <label for="uname">Номер карты</label>
                                 <br>
                                 <input class="bank-card card-number" type="number">
@@ -56,7 +58,7 @@
                                 <input class="bank-card card-number" type="number">
                                 <input class="bank-card card-number" type="number">
                             </div>
-                            <div>
+                            <div class="bank-card_data">
                                 <label for="uname">Срок действия</label>
                                 <br>
                                 <select class="bank-card card-month" id="month" name="month">
@@ -79,22 +81,21 @@
                                     <option>2020</option>
                                     <option>2021</option>
                                 </select>
-                                <div>
-                                    <input class="bank-card card-user" type="text" value="Держатель карты">
-                                </div>
+                                <input class="bank-card card-user" type="text" value="Держатель карты">
                             </div>
                         </div>
                         <div class="bank-card-out">
                             <div class="card-magnet"></div>
-                            <label for="uname">Код CVV2 / CVC2</label>
-                            <br>
-                            <input class="bank-card card-cvc" type="number">
-                            <div>?</div>
+                            <div class="bank-card-out_cvc">
+                                <label for="uname">Код CVV2 / CVC2</label>
+                                <br>
+                                <input class="bank-card input_card-cvc" type="number">
+                                <button class="input_card-cvc-help">?</button>
+                            </div>
                         </div>
-                        <input type="submit" value="Оплатить">
-                    </form>
                 </div>
-                <div class="identification_head_data"></div>
+                <input class="form-submit" type="submit" value="Оплатить">
+                </form>
             </div>
             <div class="identification_foot">
                 <div class="identification_foot_text">
@@ -107,7 +108,8 @@
                         уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий
                         волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности
                         кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет
-                        иначе взглянуть на то, что такое волчок.</p>
+                        иначе взглянуть на то, что такое волчок.
+                    </p>
                 </div>
             </div>
         </aside>

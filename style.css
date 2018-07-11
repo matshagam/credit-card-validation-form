@@ -59,8 +59,35 @@ body {
   height: 572px;
   background-color: #f7f8f8;
 }
-.identification_head_info legend,
-.identification_head_info label {
+.identification_head_info {
+  padding: 48px 0 0 30px;
+  height: 82px;
+  margin-bottom: 35px;
+}
+.identification_head_info legend {
+  color: #8494ab;
+  font-family: 'Arial MT';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 23px;
+}
+.data-label {
+  float: left;
+  margin-right: 40px;
+}
+.identification_head_bank {
+  padding-left: 30px;
+  height: 361px;
+}
+.identification_head_bank legend {
+  color: #383d43;
+  font-family: 'Open Sans';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.45px;
+}
+.identification_head label {
   color: #8494ab;
   font-family: 'Arial MT';
   font-size: 16px;
@@ -78,24 +105,68 @@ body {
 .identification_head_bank .bank-card-out {
   width: 353px;
   height: 239px;
+  border-radius: 15px;
   background-color: #f7f8f8;
   border: 1px solid #e4e9ee;
+  padding: 27px 0 16px 16px;
+}
+.identification_head_bank .bank-card-out {
+  float: right;
+  margin: 40px 46px 0 0;
+  box-sizing: border-box;
+}
+.identification_head_bank .bank-card-face {
+  position: absolute;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 .identification_head_bank .bank-card {
   border: 1px solid #e4e9ee;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 .identification_head_bank .card-number {
   width: 67px;
   height: 45px;
 }
 .identification_head_bank .card-magnet {
-  width: 271px;
+  width: 100%;
   height: 45px;
+  background-color: #e4e9ee;
+}
+.bank-card-out_cvc {
+  width: 140px;
+  height: 63px;
+  margin: 16px;
+  float: right;
 }
 .identification_head_bank .card-cvc {
+  float: right;
+  margin-top: 16px;
+}
+.identification_head_bank .input_card-cvc {
   width: 140px;
   height: 45px;
+  position: absolute;
+}
+.input_card-cvc-help {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #e4e9ee;
+  color: #e4e9ee;
+  font-size: 19px;
+  text-align: center;
+  position: relative;
+  margin: 10px 10px 0 104px;
+  box-sizing: border-box;
+}
+select {
+  color: #373c43;
+  font-family: 'Arial MT';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
 }
 .identification_head_bank .card-user {
   width: 321px;
@@ -108,6 +179,37 @@ body {
 .identification_head_bank .card-year {
   width: 88px;
   height: 45px;
+}
+.bank-card_data {
+  margin-top: 16px;
+}
+.card-year + input.card-user {
+  margin-top: 10px;
+  color: #bec6cf;
+  font-family: 'Arial MT';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-left: 13px;
+}
+.identification_head .form-submit {
+  position: relative;
+  width: 135px;
+  height: 42px;
+  border-radius: 20px;
+  background-color: #005abf;
+  background-image: linear-gradient(
+    to top,
+    rgba(37, 36, 35, 0.18) 0%,
+    rgba(37, 36, 35, 0) 100%
+  );
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 0 0 0 44px;
+  bottom: 40px;
 }
 .identification_foot {
   width: 641px;
