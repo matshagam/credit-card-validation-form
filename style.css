@@ -1,0 +1,132 @@
+html {
+  background-color: #fff;
+}
+body {
+  width: 1200px;
+  height: 991px;
+  background-color: #101114;
+  margin: 0;
+}
+.container {
+  width: 959px;
+  height: 832px;
+  padding: 78px 0 0 125px;
+}
+.menu {
+  width: 318px;
+  height: 375px;
+  background-color: #1f2229;
+  float: left;
+}
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu_list li {
+  background-color: #1f2229;
+  display: flex;
+  flex: auto;
+  padding: 0 0 0 29px;
+  align-items: center;
+}
+.menu_list li a {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+.menu_list li.active,
+.menu_list li:hover {
+  background-color: #2a2d37;
+}
+.menu_list li.active > a,
+.menu_list li:hover > a {
+  color: #808592;
+}
+.identification {
+  width: 639px;
+  height: 832px;
+  float: right;
+}
+.identification_head {
+  width: 641px;
+  height: 572px;
+  background-color: #f7f8f8;
+}
+.identification_head_info legend,
+.identification_head_info label {
+  color: #8494ab;
+  font-family: 'Arial MT';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.identification_head_info output {
+  color: #373c43;
+  font-family: 'Arial MT';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.identification_head_bank .bank-card-face,
+.identification_head_bank .bank-card-out {
+  width: 353px;
+  height: 239px;
+  background-color: #f7f8f8;
+  border: 1px solid #e4e9ee;
+}
+.identification_head_bank .bank-card {
+  border: 1px solid #e4e9ee;
+  background-color: #ffffff;
+}
+.identification_head_bank .card-number {
+  width: 67px;
+  height: 45px;
+}
+.identification_head_bank .card-magnet {
+  width: 271px;
+  height: 45px;
+}
+.identification_head_bank .card-cvc {
+  width: 140px;
+  height: 45px;
+}
+.identification_head_bank .card-user {
+  width: 321px;
+  height: 45px;
+}
+.identification_head_bank .card-month {
+  width: 72px;
+  height: 45px;
+}
+.identification_head_bank .card-year {
+  width: 88px;
+  height: 45px;
+}
+.identification_foot {
+  width: 641px;
+  height: 265px;
+  background-color: #373c43;
+}
+.identification_foot_text {
+  color: #7f8591;
+  font-family: 'Arial MT';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 27px 46px 34px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 565px;
+  height: 204px;
+}
+.identification_foot p {
+  margin: 0;
+}
