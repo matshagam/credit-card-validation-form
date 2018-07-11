@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/open-sans-v15-latin/open-sans-v15-latin-regular.woff') format('woff')
+}
 html {
   background-color: #fff;
 }
@@ -6,6 +10,9 @@ body {
   height: 991px;
   background-color: #101114;
   margin: 0;
+}
+legend, ul {
+  padding: 0;
 }
 .container {
   width: 959px;
@@ -23,7 +30,6 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  padding: 0;
 }
 .menu_list li {
   background-color: #1f2229;
@@ -54,19 +60,19 @@ body {
   height: 832px;
   float: right;
 }
-.identification_head {
+.identification-head {
   width: 641px;
   height: 572px;
   background-color: #f7f8f8;
 }
-.identification_head_info {
+.identification-head_info {
   padding: 48px 0 0 30px;
   height: 82px;
   margin-bottom: 35px;
 }
-.identification_head_info legend {
+.identification-head_info legend {
   color: #8494ab;
-  font-family: 'Arial MT';
+  font-family: Arial;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -76,33 +82,38 @@ body {
   float: left;
   margin-right: 40px;
 }
-.identification_head_bank {
+.data-output,
+.data-label {
+  display: flex;
+  flex-direction: column;
+}
+.identification-head_bank {
   padding-left: 30px;
   height: 361px;
 }
-.identification_head_bank legend {
+.identification-head_bank legend {
   color: #383d43;
   font-family: 'Open Sans';
   font-size: 22px;
   font-weight: 700;
   line-height: 25.45px;
 }
-.identification_head label {
+.identification-head label {
   color: #8494ab;
-  font-family: 'Arial MT';
+  font-family: Arial;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
 }
-.identification_head_info output {
+.identification-head_info output {
   color: #373c43;
-  font-family: 'Arial MT';
+  font-family: Arial;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
 }
-.identification_head_bank .bank-card-face,
-.identification_head_bank .bank-card-out {
+.identification-head_bank .bank-card_face,
+.identification-head_bank .bank-card-out {
   width: 353px;
   height: 239px;
   border-radius: 15px;
@@ -110,26 +121,27 @@ body {
   border: 1px solid #e4e9ee;
   padding: 27px 0 16px 16px;
 }
-.identification_head_bank .bank-card-out {
+.identification-head_bank .bank-card-out {
   float: right;
   margin: 40px 46px 0 0;
   box-sizing: border-box;
 }
-.identification_head_bank .bank-card-face {
+.identification-head_bank .bank-card_face {
   position: absolute;
   margin-top: 20px;
   box-sizing: border-box;
 }
-.identification_head_bank .bank-card {
+.identification-head_bank .bank-card {
   border: 1px solid #e4e9ee;
   background-color: #ffffff;
   box-sizing: border-box;
+  outline: none;
 }
-.identification_head_bank .card-number {
+.identification-head_bank .card-number {
   width: 67px;
   height: 45px;
 }
-.identification_head_bank .card-magnet {
+.identification-head_bank .card-magnet {
   width: 100%;
   height: 45px;
   background-color: #e4e9ee;
@@ -140,14 +152,10 @@ body {
   margin: 16px;
   float: right;
 }
-.identification_head_bank .card-cvc {
+.identification-head_bank .card-cvc {
   float: right;
-  margin-top: 16px;
-}
-.identification_head_bank .input_card-cvc {
   width: 140px;
   height: 45px;
-  position: absolute;
 }
 .input_card-cvc-help {
   width: 26px;
@@ -160,39 +168,41 @@ body {
   position: relative;
   margin: 10px 10px 0 104px;
   box-sizing: border-box;
+  outline: none;
+  top: -45px;
 }
-select {
+.expiration-date select {
   color: #373c43;
-  font-family: 'Arial MT';
+  font-family: Arial;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
 }
-.identification_head_bank .card-user {
-  width: 321px;
-  height: 45px;
-}
-.identification_head_bank .card-month {
+.identification-head_bank .card-month {
   width: 72px;
   height: 45px;
 }
-.identification_head_bank .card-year {
+.identification-head_bank .card-year {
   width: 88px;
   height: 45px;
 }
-.bank-card_data {
+.expiration-date {
   margin-top: 16px;
 }
-.card-year + input.card-user {
-  margin-top: 10px;
+.card-user::placeholder {
   color: #bec6cf;
-  font-family: 'Arial MT';
+}
+.card-user {
+  width: 321px;
+  height: 45px;
+  margin-top: 10px;
+  font-family: Arial;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   padding-left: 13px;
 }
-.identification_head .form-submit {
+.identification-head .form-submit {
   position: relative;
   width: 135px;
   height: 42px;
@@ -208,17 +218,17 @@ select {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  margin: 0 0 0 44px;
-  bottom: 40px;
+  top: 297px;
+  outline: none;
 }
-.identification_foot {
+.identification-foot {
   width: 641px;
   height: 265px;
   background-color: #373c43;
 }
-.identification_foot_text {
+.identification-foot_text {
   color: #7f8591;
-  font-family: 'Arial MT';
+  font-family: Arial;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -229,6 +239,6 @@ select {
   width: 565px;
   height: 204px;
 }
-.identification_foot p {
+.identification-foot p {
   margin: 0;
 }
