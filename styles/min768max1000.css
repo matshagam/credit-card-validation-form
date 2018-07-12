@@ -20,10 +20,12 @@
 .identification-head_bank {
   padding-left: 24px;
 }
-.identification-head_bank .bank-card_face,
-.identification-head_bank .bank-card-out {
-  padding: 27px 0 16px 0;
-}
 .identification-head_bank .bank-card-out {
   margin-right: 16px;
+}
+.identification-foot_text {
+  padding: 24px;
+}
+.identification-foot {
+  height: auto;
 }
