@@ -7,10 +7,9 @@
     <title>ИДАГРУПП</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" media="all and (max-width: 480px)" href="./styles/max480.css" />
-    <link rel="stylesheet" media="all and (min-width: 480px) and (max-width: 767px)" href="./styles/min480max767.css" />
+    <link rel="stylesheet" media="all and (min-width: 480px) and (max-width: 767px)" href="./styles/min480max768.css" />
     <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1000px)" href="./styles/min768max1000.css" />
 </head>
-s
 
 <body>
     <div class="container">
@@ -51,17 +50,17 @@ s
                     </form>
                 </div>
                 <div class="identification-head_bank">
-                    <form>
+                    <form action="" onsubmit="return validateForm()" method="post">
                         <legend>Данные банковской карты</legend>
                         <div class="card">
                             <div class="bank-card_face">
                                 <div class="card-number-field">
                                     <label>Номер карты</label>
                                     <br>
-                                    <input class="bank-card card-number" type="number">
-                                    <input class="bank-card card-number" type="number">
-                                    <input class="bank-card card-number" type="number">
-                                    <input class="bank-card card-number" type="number">
+                                    <input class="bank-card card-number" id="value-1" type="number">
+                                    <input class="bank-card card-number" id="value-2" type="number">
+                                    <input class="bank-card card-number" id="value-3" type="number">
+                                    <input class="bank-card card-number" id="value-4" type="number">
                                 </div>
                                 <div class="expiration-date">
                                     <label>Срок действия</label>
@@ -95,7 +94,9 @@ s
                                     <label>Код CVV2 / CVC2</label>
                                     <br>
                                     <input class="bank-card card-cvc" type="number">
-                                    <button class="input_card-cvc-help">?</button>
+                                    <div class="input_card-cvc-help">
+                                        <span>?</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/open-sans-v15-latin/open-sans-v15-latin-regular.woff')
+  src: url('./fonts/open-sans-v15-latin/open-sans-v15-latin-regular.woff'),
     format('woff');
 }
 * {
@@ -14,6 +14,9 @@ body {
   min-width: 320px;
   height: 100%;
   background: #101114;
+}
+.identification-head_bank form .error {
+  border-color: red;
 }
 .container {
   max-width: 962px;
@@ -143,6 +146,13 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
   outline: none;
+  font-size: 16px;
+  padding: 0 13px;
+}
+.identification-head_bank input[type='number']::-webkit-inner-spin-button,
+.identification-head_bank input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .identification-head_bank .card-number {
   width: 67px;
@@ -176,7 +186,9 @@ body {
   margin: 10px 10px 0 104px;
   box-sizing: border-box;
   outline: none;
-  top: -45px;
+  top: -36px;
+  display: flex;
+  justify-content: center;
 }
 .expiration-date select {
   color: #373c43;
@@ -184,6 +196,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+  background: url(../assets/baseline-keyboard_arrow_down-24px.svg) no-repeat
+    right #ddd;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .identification-head_bank .card-month {
   width: 72px;
