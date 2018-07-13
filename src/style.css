@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url('./open-sans-v15-latin-regular.woff'), format('woff');
+  src: url(./open-sans-v15-latin-regular.woff), format('woff');
 }
 * {
   margin: 0;
@@ -13,6 +13,9 @@ body {
   min-width: 320px;
   height: 100%;
   background: #101114;
+}
+body {
+  font-size: 62.5%;
 }
 .identification-head_bank form .error {
   border-color: red;
@@ -46,7 +49,7 @@ body {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   color: #ffffff;
   font-family: 'Open Sans';
-  font-size: 18px;
+  font-size: 1.8em;
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
@@ -78,7 +81,7 @@ body {
 .identification-head_info legend {
   color: #8494ab;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 400;
   line-height: 21px;
   margin-bottom: 23px;
@@ -103,21 +106,21 @@ body {
 .identification-head_bank legend {
   color: #383d43;
   font-family: 'Open Sans';
-  font-size: 22px;
+  font-size: 2.2em;
   font-weight: 700;
   line-height: 25.45px;
 }
 .identification-head label {
   color: #8494ab;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 400;
   line-height: 21px;
 }
 .identification-head_info output {
   color: #373c43;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 400;
   line-height: 21px;
 }
@@ -145,7 +148,7 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
   outline: none;
-  font-size: 16px;
+  font-size: 1.6em;
   padding: 0 13px;
 }
 .identification-head_bank input[type='number']::-webkit-inner-spin-button,
@@ -238,7 +241,7 @@ body {
   );
   color: #ffffff;
   font-family: 'Open Sans';
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 700;
   line-height: 18px;
   outline: none;
@@ -251,7 +254,7 @@ body {
   display: flex;
   color: #7f8591;
   font-family: Arial;
-  font-size: 12px;
+  font-size: 1.2em;
   font-weight: 400;
   line-height: 18px;
   padding: 27px 46px 34px 30px;
