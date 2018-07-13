@@ -1,9 +1,12 @@
-var form = document.querySelector('.identification-head_bank form');
-var cvc = form.querySelector('.card-cvc');
-var user = form.querySelector('.card-user');
-var cardNumber = form.querySelectorAll('.card-number');
-var month = form.querySelector('.card-month');
-var year = form.querySelector('.card-year');
+const form = document.querySelector('.identification-head_bank form');
+const cvc = form.querySelector('.card-cvc');
+const user = form.querySelector('.card-user');
+const cardNumber = form.querySelectorAll('.card-number');
+const month = form.querySelector('.card-month');
+const year = form.querySelector('.card-year');
+
+const dYear = new Date().getFullYear();
+const dMonth = new Date().getMonth();
 
 validateForm = () => {
   event.preventDefault();
@@ -11,7 +14,7 @@ validateForm = () => {
   removeValidation();
   checkErrors();
 
-  const errors = document.querySelectorAll('.error');
+  const errors = form.querySelectorAll('.error');
 
   if (!errors.length) {
     return true;
@@ -21,7 +24,7 @@ validateForm = () => {
 };
 
 removeValidation = () => {
-  const errors = document.querySelectorAll('.error');
+  const errors = form.querySelectorAll('.error');
 
   for (let i = 0; i < errors.length; i++) {
     errors[i].classList.remove('error');
@@ -29,9 +32,6 @@ removeValidation = () => {
 };
 
 checkErrors = () => {
-  const dYear = new Date().getFullYear();
-  const dMonth = new Date().getMonth();
-
   for (let i = 0; i < cardNumber.length; i++) {
     if (cardNumber[i].value.length !== 4)
       cardNumber[i].className += ' ' + 'error';
