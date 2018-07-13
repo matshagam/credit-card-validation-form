@@ -198,6 +198,7 @@ body {
   background: url(./baseline-keyboard_arrow_down-24px.svg) no-repeat right #ddd;
   -webkit-appearance: none;
   appearance: none;
+  border-radius: 0;
 }
 .identification-head_bank .card-month {
   width: 72px;
