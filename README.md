@@ -2,9 +2,7 @@
 
 Использование
 
-1.  Установите Node.js.
-2.  В терминале наберите:
-    a) git clone https://github.com/matshagam/credit-card-validation-form
-    б) cd credit-card-validation-form
-    в) npm i
-    г) npm run build или npm run start для открытия проекта
+1.  git clone https://github.com/matshagam/credit-card-validation-form
+2.  cd credit-card-validation-form
+3.  npm i
+4.  npm run build или npm run start для открытия проекта
